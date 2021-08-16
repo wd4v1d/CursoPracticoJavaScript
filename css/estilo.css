@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(75, 68, 68);
+}
+h1{
+    text-align: center;
+    font-size:4em;
+    color: azure;
+    /*border: 1px solid;*/
+    
+}
+#divgeneral{
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0%;
+    /*border: 1px solid;*/
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    border-radius: 50px;
+}
+#divgeneral section{
+    /*border: 1px solid;*/
+    width: 33.333333%;
+    /*height: 20em;*/
+    /*float: left;*/
+    /*vertical-align: middle;*/
+}
+#divgeneral section h2 {
+    padding: 10px;
+    font-size: 1.5em;
+    color: #1d6e1f;
+}
+#cuadrado{
+    background-color: aquamarine; 
+}
+#triangulo{
+    background-color:bisque;
+}
+input{
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    width: 10vw;
+}
+label{
+    font-size: 1em;
+}
+#divgeneral section button {
+    background-color: #aceeae;
+    border-radius: 5px;
+    color: rgb(7, 6, 6);
+    padding: 5px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+}
+  
+#divgeneral section button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
