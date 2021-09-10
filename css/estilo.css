@@ -1,12 +1,11 @@
 body{
     background-color: rgb(75, 68, 68);
+    color: azure;
 }
 h1{
     text-align: center;
     font-size:4em;
-    color: azure;
-    /*border: 1px solid;*/
-    
+    /*border: 1px solid;*/ 
 }
 #divgeneral{
     background-color: antiquewhite;
@@ -17,6 +16,7 @@ h1{
     text-align: center;
     display: flex;
     border-radius: 50px;
+    color: rgb(8, 8, 8);
 }
 #divgeneral section{
     /*border: 1px solid;*/
@@ -60,4 +60,29 @@ label{
 #divgeneral section button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
+}
+#divresul{
+    text-align: center;
+}
+#resultado{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 0% 0% 0% 10%;
+    height: 40px;
+    width: 80%;
+    background-color: #fbfbfb;
+    color: rgb(22, 21, 21);
+   
+}
+#limpiar{
+    height: 100%;
+    background-color: #aceeae;
+    border-radius: 5px;
+    color: rgb(7, 6, 6);
+    padding: 5px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
 }

@@ -32,22 +32,22 @@
             <form action="">
                 <label for="InputTriangulo1">
                     Escribe lado 1
-                </label><br>
+                </label>
                 <input id="InputTriangulo1" type="number" />
                 <br>
                 <label for="InputTriangulo2">
                     Escribe lado 2
-                </label><br>
+                </label>
                 <input id="InputTriangulo2" type="number" />
                 <br>
                 <label for="InputTriangulo3">
                     Escribe la base del triangulo
-                </label><br>
+                </label>
                 <input id="InputTriangulo3" type="number" />
                 <br>
                 <label for="InputTriangulo4">
                     Escribe la altura del triangulo
-                </label><br>
+                </label>
                 <input id="InputTriangulo4" type="number" />
                 <br>
                 <button type="button" onclick="calcularPerimetroTriangulo()">
@@ -76,6 +76,14 @@
                 </button>
             </form>
         </section>
+    </div>
+        
+    <div id="divresul">
+        <h2>Resultado</h2>
+        <span id="resultado"></span>
+        <button id="limpiar" onclick="limpiar()">
+            Limpiar
+        </button>
     </div>
     <script src="./figuras.js"></script>
 </body>
