@@ -5,29 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas | curso Practico JavaScript</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <!--<link rel="stylesheet" href="css/estilo.css"> -->
+    <!-- Bootstrap CSS SASS-->
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
     <header>
+        <ul class="nav nav-pills nav-fill justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">CalFiguras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="descuentos.html">CalDescuentos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="descuentos.html">Cal</a>
+              </li>
+        </ul>
+        
         <h1>Figuras Geometricas</h1>
     </header>
-    <div id="divgeneral">
-        <section id="cuadrado">
+    <div id="divgeneral" class="row">
+        <section id="cuadrado" class="col-md">
             <h2>Calcula el area y perimetro de un cuadrado</h2>
             <form action="">
                 <label for="InputCuadrado">
                     Escribe el lado de tu cuadrado
                 </label><br>
                 <input id="InputCuadrado" type="number" /><br>
-                <button type="button" onclick="calcularPerimetroCuadrado()">
+                <button type="button" onclick="calcularPerimetroCuadrado()" type="button" class="btn btn-secondary">
                     Calcular perimetro
                 </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
+                <button type="button" onclick="calcularAreaCuadrado()" type="button" class="btn btn-secondary">
                     Calcular Area
                 </button>
             </form>
         </section>
-        <section id="triangulo">
+        <section id="triangulo" class="col-md-5">
             <h2>Calcula el area y perimetro de un triangulo</h2>
             <form action="">
                 <label for="InputTriangulo1">
@@ -50,41 +64,43 @@
                 </label>
                 <input id="InputTriangulo4" type="number" />
                 <br>
-                <button type="button" onclick="calcularPerimetroTriangulo()">
+                <button type="button" onclick="calcularPerimetroTriangulo()" type="button" class="btn btn-secondary">
                     Calcular perimetro
                 </button>
-                <button type="button" onclick="calcularAreaTriangulo()">
+                <button type="button" onclick="calcularAreaTriangulo()" type="button" class="btn btn-secondary">
                     Calcular Area
                 </button>
             </form>
         </section>
-        <section id="circulo">
+        <section id="circulo" class="col-md">
             <h2>Calcula el area y perimetro de un circulo</h2>
             <form action="">
                 <label for="InputCirculo">
                     Escribe el radio del circulo
                 </label><br>
                 <input id="InputCirculo" type="number" /><br>
-                <button type="button" onclick="calcularPerimetroCirculo()">
+                <button type="button" onclick="calcularPerimetroCirculo()" type="button" class="btn btn-secondary">
                     Calcular perimetro
                 </button>
-                <button type="button" onclick="calcularDiametroCirculo()">
+                <button type="button" onclick="calcularDiametroCirculo()" type="button" class="btn btn-secondary">
                     Calcular Diametro
                 </button>
-                <button type="button" onclick="calcularAreaCirculo()">
+                <button type="button" onclick="calcularAreaCirculo()" type="button" class="btn btn-secondary">
                     Calcular Area
                 </button>
             </form>
         </section>
     </div>
         
-    <div id="divresul">
+    <div id="divresul" class="row">
         <h2>Resultado</h2>
         <span id="resultado"></span>
-        <button id="limpiar" onclick="limpiar()">
+        <button id="limpiar" onclick="limpiar()" type="button" class="btn btn-primary">
             Limpiar
         </button>
     </div>
-    <script src="./figuras.js"></script>
+    <script src="./js/figuras.js"></script>
+    <script src="lib/bootstrap-5.1.1/dist/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
