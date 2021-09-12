@@ -1,4 +1,4 @@
-$primary: rgb(165, 80, 199);
+$primary: rgb(205, 118, 240);
 
 
 @import "../lib/bootstrap-5.1.1/scss/bootstrap";
@@ -13,22 +13,14 @@ h1{
     /*border: 1px solid;*/ 
 }
 #divgeneral{
-    background-color: antiquewhite;
     margin: 0px;
     padding: 0%;
     /*border: 1px solid;*/
-    overflow: hidden;
+    //overflow: hidden;
     text-align: center;
-    display: flex;
-    border-radius: 50px;
+    //display: flex;
+    //border-radius: 50px;
     color: rgb(8, 8, 8);
-}
-#divgeneral section{
-    /*border: 1px solid;*/
-    
-    /*height: 20em;*/
-    /*float: left;*/
-    /*vertical-align: middle;*/
 }
 #divgeneral section h2 {
     padding: 10px;
@@ -36,17 +28,23 @@ h1{
     color: #1d6e1f;
 }
 #cuadrado{
-    background-color: aquamarine; 
+    background-color: aquamarine;
+    margin: 10px 0px 10px 10px; 
 }
 #triangulo{
     background-color:bisque;
+    margin: 10px 0px 10px 10px;
+}
+#circulo{
+    background-color: rgb(127, 187, 255);
+    margin: 10px 0px 10px 10px;
 }
 input{
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 5px;
     margin: 5px;
     border: none;
-    width: 10vw;
+    //width: 50vw;
 }
 label{
     font-size: 1em;
@@ -58,7 +56,7 @@ label{
     padding: 5px;
     margin: 10px 0px 10px 10px;
     text-align: center;
-    font-size: 12px;
+    font-size: 1em;
     border: none;
 }
   
@@ -67,27 +65,48 @@ label{
     color: white;
 }
 #divresul{
+    background-color: #08ccc2;
     text-align: center;
 }
 #resultado{
     display: block;
     text-align: center;
-    font-size: 40px;
+    //font-size: 1em;
     margin: 0% 0% 0% 10%;
-    height: 40px;
+    height: 2em;
     width: 80%;
     background-color: #fbfbfb;
     color: rgb(22, 21, 21);
    
 }
 #limpiar{
-    height: 100%;
-    background-color: #aceeae;
-    border-radius: 5px;
+    //width: 11%;
+    background-color: #e6f591;
+    //border-radius: 25px;
     color: rgb(7, 6, 6);
-    padding: 5px;
-    margin: 10px 0px 10px 10px;
-    text-align: center;
-    font-size: 12px;
+    //padding: 5px;
+    margin: 20px;
+    //text-align: center;
+    //font-size: 100%;
     border: none;
+}
+#secgeneral{
+    text-align: center;
+    background-color: #e6f591;
+    color: rgb(7, 6, 6);
+    margin: 20px;
+    padding: 15px;
+}
+#secgeneral button{
+    margin: 20px;
+}
+#secgeneral Form span{
+    display: block;
+    text-align: center;
+    //font-size: 1em;
+    //margin: 0% 0% 0% 10%;
+    height: 2em;
+    width: 80%;
+    background-color: #fbfbfb;
+    color: rgb(22, 21, 21);
 }

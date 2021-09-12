@@ -23,16 +23,16 @@
         </ul>
         <h1>Precio y Descuento</h1>
     </header>
-    <section>
+    <section id="secgeneral">
         <h2>Calcular el precio con Descuento</h2>
         <Form>
             <label for="">Escribe el precio del producto</label>
             <input id="InputPrice"type="number">
-
-            <label for="">Escribe el Codigo de Descuento</label>
-            <input id="InputCoupon"type="text">
-
-            <button type="button" onclick="calcularDescuento()">Generar Descuento</button>
+              <br>
+            <label for="">Escribe el % de Descuento</label>
+            <input id="InputCoupon"type="number">
+              <br>
+            <button type="button" class="btn btn-warning" onclick="calcularDescuento()">Generar Descuento</button>
             <br>
             <span id="resultado"></span>
         </Form>

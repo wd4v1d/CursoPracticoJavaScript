@@ -1,106 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figuras geometricas | curso Practico JavaScript</title>
     <!--<link rel="stylesheet" href="css/estilo.css"> -->
     <!-- Bootstrap CSS SASS-->
-    <link href="css/estilos.css" rel="stylesheet">
-</head>
-<body>
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
+
+  <body>
     <header>
-        <ul class="nav nav-pills nav-fill justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">CalFiguras</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="descuentos.html">CalDescuentos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="descuentos.html">Cal</a>
-              </li>
-        </ul>
-        
-        <h1>Figuras Geometricas</h1>
+      <ul class="nav nav-pills nav-fill justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"
+            >Calcular Figuras</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="descuentos.html">Calcular Descuentos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="descuentos.html">taller #3</a>
+        </li>
+      </ul>
+
+      <h1>Figuras Geometricas</h1>
     </header>
     <div id="divgeneral" class="row">
-        <section id="cuadrado" class="col-md">
+      <section>
+        <p>
+          <a
+            class="btn btn-info"
+            data-bs-toggle="collapse"
+            href="#collapse1"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapsecuadrado"
+          >
+            Cuadrado
+          </a>
+          <a
+            class="btn btn-info"
+            data-bs-toggle="collapse"
+            href="#collapse2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapsetriangulo"
+          >
+            Triangulo
+          </a>
+          <a
+          class="btn btn-info"
+          data-bs-toggle="collapse"
+          href="#collapse3"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapsecirculo"
+        >
+          Circulo
+        </a>
+        </p>
+        <div class="collapse" id="collapse1">
+          <div class="card card-body" id="cuadrado">
             <h2>Calcula el area y perimetro de un cuadrado</h2>
             <form action="">
-                <label for="InputCuadrado">
-                    Escribe el lado de tu cuadrado
-                </label><br>
-                <input id="InputCuadrado" type="number" /><br>
-                <button type="button" onclick="calcularPerimetroCuadrado()" type="button" class="btn btn-secondary">
-                    Calcular perimetro
-                </button>
-                <button type="button" onclick="calcularAreaCuadrado()" type="button" class="btn btn-secondary">
-                    Calcular Area
-                </button>
+              <label for="InputCuadrado"> Escribe el lado de tu cuadrado </label
+              ><br />
+              <input id="InputCuadrado" type="number" /><br />
+              <button
+                type="button"
+                onclick="calcularPerimetroCuadrado()"
+                type="button"
+                class="btn btn-secondary"
+              >
+                Calcular perimetro
+              </button>
+              <button
+                type="button"
+                onclick="calcularAreaCuadrado()"
+                type="button"
+                class="btn btn-secondary"
+              >
+                Calcular Area
+              </button>
             </form>
-        </section>
-        <section id="triangulo" class="col-md-5">
+          </div>
+        </div>
+        <div class="collapse" id="collapse2">
+          <div class="card card-body" id="triangulo">
             <h2>Calcula el area y perimetro de un triangulo</h2>
             <form action="">
-                <label for="InputTriangulo1">
-                    Escribe lado 1
-                </label>
-                <input id="InputTriangulo1" type="number" />
-                <br>
-                <label for="InputTriangulo2">
-                    Escribe lado 2
-                </label>
-                <input id="InputTriangulo2" type="number" />
-                <br>
-                <label for="InputTriangulo3">
-                    Escribe la base del triangulo
-                </label>
-                <input id="InputTriangulo3" type="number" />
-                <br>
-                <label for="InputTriangulo4">
-                    Escribe la altura del triangulo
-                </label>
-                <input id="InputTriangulo4" type="number" />
-                <br>
-                <button type="button" onclick="calcularPerimetroTriangulo()" type="button" class="btn btn-secondary">
-                    Calcular perimetro
-                </button>
-                <button type="button" onclick="calcularAreaTriangulo()" type="button" class="btn btn-secondary">
-                    Calcular Area
-                </button>
+              <label for="InputTriangulo1"> Escribe lado 1 </label>
+              <input id="InputTriangulo1" type="number" />
+              <br />
+              <label for="InputTriangulo2"> Escribe lado 2 </label>
+              <input id="InputTriangulo2" type="number" />
+              <br />
+              <label for="InputTriangulo3">
+                Escribe la base del triangulo
+              </label>
+              <input id="InputTriangulo3" type="number" />
+              <br />
+              <label for="InputTriangulo4">
+                Escribe la altura del triangulo
+              </label>
+              <input id="InputTriangulo4" type="number" />
+              <br />
+              <button
+                type="button"
+                onclick="calcularPerimetroTriangulo()"
+                type="button"
+                class="btn btn-secondary"
+              >
+                Calcular perimetro
+              </button>
+              <button
+                type="button"
+                onclick="calcularAreaTriangulo()"
+                type="button"
+                class="btn btn-secondary"
+              >
+                Calcular Area
+              </button>
             </form>
-        </section>
-        <section id="circulo" class="col-md">
-            <h2>Calcula el area y perimetro de un circulo</h2>
-            <form action="">
-                <label for="InputCirculo">
-                    Escribe el radio del circulo
-                </label><br>
-                <input id="InputCirculo" type="number" /><br>
-                <button type="button" onclick="calcularPerimetroCirculo()" type="button" class="btn btn-secondary">
-                    Calcular perimetro
-                </button>
-                <button type="button" onclick="calcularDiametroCirculo()" type="button" class="btn btn-secondary">
-                    Calcular Diametro
-                </button>
-                <button type="button" onclick="calcularAreaCirculo()" type="button" class="btn btn-secondary">
-                    Calcular Area
-                </button>
-            </form>
-        </section>
+          </div>
+        </div>
+        <div class="collapse" id="collapse3">
+            <div class="card card-body" id="circulo">
+                <h2>Calcula el area y perimetro de un circulo</h2>
+                <form action="">
+                    <label for="InputCirculo"> Escribe el radio del circulo </label><br />
+                    <input id="InputCirculo" type="number" /><br />
+                    <button type="button" onclick="calcularPerimetroCirculo()" type="button" class="btn btn-secondary">
+                        Calcular perimetro
+                    </button>
+                    <button type="button" onclick="calcularDiametroCirculo()" type="button" class="btn btn-secondary">
+                        Calcular Diametro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()" type="button" class="btn btn-secondary">
+                        Calcular Area
+                    </button>
+                </form>
+            </div>
+          </div>
+      </section>
     </div>
-        
-    <div id="divresul" class="row">
-        <h2>Resultado</h2>
-        <span id="resultado"></span>
-        <button id="limpiar" onclick="limpiar()" type="button" class="btn btn-primary">
-            Limpiar
-        </button>
+
+    <div id="divresul">
+      <h2>Resultado</h2>
+      <span id="resultado"></span>
+      <button
+        id="limpiar"
+        onclick="limpiar()"
+        type="button"
+        class="btn btn-warning"
+      >
+        Limpiar
+      </button>
     </div>
     <script src="./js/figuras.js"></script>
     <script src="lib/bootstrap-5.1.1/dist/js/bootstrap.min.js"></script>
-    
-</body>
+  </body>
 </html>

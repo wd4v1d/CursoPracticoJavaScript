@@ -152,7 +152,7 @@ function calcularPerimetroCirculo(){
     }
     else {
         normal();
-        resultado.textContent = "El perimetro del circulo es:"+perimetrocir; 
+        resultado.textContent = perimetrocir; 
     }  
 }
 
