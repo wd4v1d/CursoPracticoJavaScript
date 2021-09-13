@@ -11952,6 +11952,7 @@ fieldset:disabled .btn {
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
   background-color: #4b4444;
   color: azure;
 }
