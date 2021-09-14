@@ -1,0 +1,101 @@
+body{
+    background: #807e7e;
+    margin:0;
+}
+h1{
+    text-align: center;
+    font-size:25%;
+    padding: 5px;
+}
+#divgeneral{
+    text-align: center;
+    margin: 1%;
+}
+#divgeneral h2 {
+    padding: 5px;
+    font-size: 1.2em;
+    color: #1d6e1f;
+}
+#cuadrado{
+    background-color: aquamarine;
+    margin: 1%;
+    border-radius: 15px; 
+}
+#triangulo{
+    background-color:bisque;
+    margin: 1%;
+    border-radius: 15px;
+}
+#circulo{
+    background-color: rgb(127, 187, 255);
+    margin: 1%;
+    border-radius: 15px;
+}
+input{
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    width: 8em;
+    background-color: #fffdfdb7;
+}
+label{
+    font-size: 1em;
+    margin: 5px;
+}
+#divgeneral section button {
+    background-color: #aceeae;
+    border-radius: 5px;
+    color: rgb(7, 6, 6);
+    padding: 5px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+}
+#divgeneral section button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+#divresul{
+    background-color: #57e4dd;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 2px;
+}
+#resultado{ 
+    margin: 10px 10% 0px 10%;
+    width: 80%;
+    border-radius: 15px;
+    color: rgb(22, 21, 21);  
+}
+#limpiar{
+    width: 50%;
+    background-color: #ebac5bea;
+    border-radius: 15px;
+    color: rgb(7, 6, 6);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    border: none;
+}
+#secgeneral{
+    text-align: center;
+    background-color: #e6f591;
+    color: rgb(7, 6, 6);
+    margin: 20px;
+    padding: 15px;
+}
+#secgeneral button{
+    margin: 20px;
+}
+#secgeneral Form span{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    margin: 0% 0% 0% 10%;
+    height: 2em;
+    width: 80%;
+    background-color: #fbfbfb;
+    color: rgb(22, 21, 21);
+}

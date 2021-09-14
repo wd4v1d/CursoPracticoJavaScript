@@ -191,12 +191,12 @@ function limpiar(){
     resultado.textContent = "";
 }
 function alerta(){
-    document.getElementById("resultado").style.color = "red";
-    document.getElementById("resultado").style.fontSize = "30px";
+    document.getElementById("resultado").style.color = "Tomato";
+    document.getElementById("resultado").style.fontSize = "1em";
     return;
 }
 function normal(){
     document.getElementById("resultado").style.color = "black";
-    document.getElementById("resultado").style.fontSize = "35px";
+    document.getElementById("resultado").style.fontSize = "1em";
     return;
 }
